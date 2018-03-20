@@ -1,0 +1,99 @@
+<html lang="pt-br">
+<head>
+    <title>Futebol Interativo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="logo.ico" type="image/x-icon" alt="logo futebol interativo">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+    <!-- integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"-->
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/regular.css" integrity="sha384-A/oR8MwZKeyJS+Y0tLZ16QIyje/AmPduwrvjeH6NLiLsp4cdE4uRJl8zobWXBm4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
+    <style>
+        .panel {
+            background-color: aquamarine;
+            padding: 10px;
+            margin: 10px;
+            overflow: hidden;
+        }
+        .panel img {
+            float:right;
+            width:100px;
+            height:100px;
+        }
+        .btn {
+            color: white;
+            background-color:#25384C;
+        }
+        .btn-lateral {
+            text-align:left;
+            margin:10px 0;
+        }
+        .hr {
+            background-color:#5A6B75;
+        }
+        .curso {
+            border-color:#CAD1DB;
+            border-style: solid;
+            border-width: 1px;
+            margin:5px;
+        }
+        .far {
+            margin-right:5px;
+        }
+        .fas {
+            margin-right:5px;
+        }
+    </style>
+</head>
+<body style="font-family:'Open Sans';">
+    <div class="row">
+        <div class="col-sm-2" style="background-color:#25384C;height:100%">
+            <div class="container text-center" style="color:white">
+                <img src="professores/brunoc.png" alt="Minha imagem de Perfil" style="margin-top:20px;max-width:100px;max-height:100px;border-radius:50%">
+                <h5>Bruno Comelli</h5>
+                <p style="color:gray">@brunocomelli</p>
+                <a style="font-size:75%;color:lightgrey" href="#"><i class="far fa-user"></i>Editar perfil</a>
+                <hr class="hr">
+                <ul style="text-align:left;list-style:none;padding:0;">
+                    <!--Tornar o Menu Lateral diminuivel, ficando apenas os ícones quando minimizado-->
+                    <li><button type="button" class="btn btn-md btn-lateral" href="#"><i class="fas fa-book"></i>Minhas Turmas</button>
+                    </li>
+                    <li><button type="button" class="btn btn-md btn-lateral" href="#"><i class="fas fa-shopping-cart"></i>Loja</button>
+                    </li>
+                    <li><button type="button" class="btn btn-md btn-lateral" href="#"><i class="fas fa-users"></i>Fórum</button>
+                    </li>
+                    <li><button type="button" class="btn btn-md btn-lateral" href="#"><i class="far fa-bell"></i>Notificações<span class="badge" style="background-color:red; margin-left:5px;">4</span></button>
+                    </li>
+                    <li><button type="button" class="btn btn-md btn-lateral" href="#"><i class="fas fa-certificate"></i>Conquistas</button>
+                    </li>
+                    <hr class="hr">
+                </ul>
+                <a style="font-size:75%;color:lightgrey" href="#"><i class="fas fa-sign-out-alt"></i>Sair</a><br>
+                <img src="" alt="Logo FI" style="margin-top:20px;max-height:100px;max-width:auto;">
+            </div>
+        </div>
+        <div class="col-sm-10" style="margin-top:35px;padding-right:0;">
+            <h3 style="text-align:center;">Curso Básico de Análise de Desempenho</h3>
+            <hr>
+            <h5 style="text-align:center;">Modulo 1 - Turma 1</h5>
+            <hr>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8" style="text-align:right;padding-right:0;">
+                        <!--Tornar video de tamanho responsivo mas colado no chat-->
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/InYgX2FIBTI?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-sm-3" style="padding-right:0;margin-right:0;">
+                        <h5 style="text-align:center;">Chat ao Vivo</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
